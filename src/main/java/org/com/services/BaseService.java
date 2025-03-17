@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public abstract class BaseService  {
+public abstract class BaseService implements Loggable  {
     protected final Scanner scanner = new Scanner(System.in);
 
     protected void saveLog(String sql, Object... params) {

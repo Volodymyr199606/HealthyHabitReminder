@@ -2,7 +2,7 @@
 package org.com.services;
 
 public class WaterService extends BaseService {
-
+    @Override
     public void logActivity() {
         int choice;
         while (true) {

@@ -3,6 +3,7 @@ package org.com.services;
 
 public class ExerciseService extends BaseService {
 
+    @Override
     public void logActivity() {
         String answer;
         while (true) {

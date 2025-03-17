@@ -2,6 +2,8 @@
 package org.com.services;
 
 public class FruitService extends BaseService {
+
+    @Override
     public void logActivity() {
         String answer;
         while (true) {
