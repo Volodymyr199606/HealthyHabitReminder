@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import static org.junit.jupiter.api.Assertions.*;
 
-class FruitServiceTest {
+class FruitServiceInteractiveTest {
     private final FruitService fruitService = new FruitService();
 
     @BeforeEach

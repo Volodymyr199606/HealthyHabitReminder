@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BaseServiceTest {
+class ExerciseServiceInteractiveTest {
     private final ExerciseService exerciseService = new ExerciseService();
 
     @BeforeEach
@@ -21,8 +21,8 @@ class BaseServiceTest {
     }
 
     @Test
-    void testSaveLog() {
-        exerciseService.logActivity(); // Manually enter a response
+    void testLogExercise() {
+        exerciseService.logActivity();
 
         try (Connection conn = DatabaseHelper.connect();
              PreparedStatement stmt = conn.prepareStatement("SELECT * FROM exercise_log ORDER BY id DESC LIMIT 1")) {

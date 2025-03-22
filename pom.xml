@@ -46,6 +46,10 @@
                             <mainClass>org.com.app.Main</mainClass>
                         </manifest>
                     </archive>
+
+                    <excludes>
+                        <exclude>**/*InteractiveTest.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
 
