@@ -3,7 +3,7 @@
 ## 📌 Overview
 
 
-HealthyLifeReminder/
+``` HealthyLifeReminder/
 │── src/
 │   ├── main/
 │   │   ├── java/
@@ -41,7 +41,7 @@ HealthyLifeReminder/
 │── HealthyLifeReminder.db  --> (SQLite database file)
 │── pom.xml  --> (Maven configuration file, if using Maven)
 │── README.md  --> (Project documentation)
-
+```
 
 
 
