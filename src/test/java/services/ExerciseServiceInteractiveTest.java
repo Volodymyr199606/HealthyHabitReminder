@@ -17,7 +17,11 @@ class ExerciseServiceInteractiveTest {
 
     @BeforeEach
     void setUp() {
-        DatabaseHelper.createTables();
+        try (Connection conn = DatabaseHelper.connect()) {
+            assertNotNull(conn, "❌ DB connection failed.");
+        } catch (SQLException e) {
+            fail("❌ DB connection failed: " + e.getMessage());
+        }
     }
 
     @Test

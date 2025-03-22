@@ -15,7 +15,12 @@ class VegetableServiceInteractiveTest {
 
     @BeforeEach
     void setUp() {
-        DatabaseHelper.createTables();
+        try (Connection conn = DatabaseHelper.connect()) {
+            assertNotNull(conn, "❌ Connection should not be null.");
+            System.out.println("✅ Test DB connection successful.");
+        } catch (SQLException e) {
+            fail("❌ DB connection failed: " + e.getMessage());
+        }
     }
 
     @Test

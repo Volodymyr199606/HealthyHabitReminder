@@ -17,12 +17,16 @@ class BaseServiceInteractiveTest {
 
     @BeforeEach
     void setUp() {
-        DatabaseHelper.createTables();
+        try (Connection conn = DatabaseHelper.connect()) {
+            assertNotNull(conn, "❌ DB connection failed.");
+        } catch (SQLException e) {
+            fail("❌ DB connection failed: " + e.getMessage());
+        }
     }
 
     @Test
     void testSaveLog() {
-        exerciseService.logActivity(); // Manually enter a response
+        exerciseService.logActivity();
 
         try (Connection conn = DatabaseHelper.connect();
              PreparedStatement stmt = conn.prepareStatement("SELECT * FROM exercise_log ORDER BY id DESC LIMIT 1")) {
