@@ -21,11 +21,11 @@
 
 
 ## 🚀 Features
-✔️ **User Registration** - Stores user details (name, age, gender, activity level).  
-✔️ **Exercise Tracking** - Logs whether the user exercised in the morning.  
-✔️ **Water Intake Tracking** - Records daily water consumption and gives hydration tips.  
-✔️ **Fruit & Vegetable Intake Logging** - Encourages healthy eating habits.  
-✔️ **SQLite Database Support** - Stores activity logs for future reference.  
-✔️ **OOP Principles** - Uses **Encapsulation, Inheritance, Polymorphism, and Interfaces**.  
-✔️ **Unit Tests** - Ensures reliability using **JUnit testing**.  
+ **User Registration** - Stores user details (name, age, gender, activity level).  
+ **Exercise Tracking** - Logs whether the user exercised in the morning.  
+ **Water Intake Tracking** - Records daily water consumption and gives hydration tips.  
+ **Fruit & Vegetable Intake Logging** - Encourages healthy eating habits.  
+ **SQLite Database Support** - Stores activity logs for future reference.  
+ **OOP Principles** - Uses **Encapsulation, Inheritance, Polymorphism, and Interfaces**.  
+ **Unit Tests** - Ensures reliability using **JUnit testing**.  
 
