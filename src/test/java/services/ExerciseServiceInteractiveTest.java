@@ -17,7 +17,7 @@ class ExerciseServiceInteractiveTest {
 
     @BeforeEach
     void setUp() {
-        DatabaseHelper.createTable();
+        DatabaseHelper.createTables();
     }
 
     @Test

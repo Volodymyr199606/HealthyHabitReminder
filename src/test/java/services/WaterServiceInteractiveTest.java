@@ -15,7 +15,7 @@ class WaterServiceInteractiveTest {
 
     @BeforeEach
     void setUp() {
-        DatabaseHelper.createTable();
+        DatabaseHelper.createTables();
     }
 
     @Test

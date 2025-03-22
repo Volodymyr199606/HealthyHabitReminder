@@ -23,7 +23,8 @@ public class WaterService extends BaseService {
             default -> "Unknown";
         };
 
-        saveLog("INSERT INTO water_log (water_intake, logged_at) VALUES (?, datetime('now'))", waterIntake);
+        saveLog("INSERT INTO water_log (water_intake, logged_at) VALUES (?, CURRENT_TIMESTAMP)", waterIntake);
+        String sql = "INSERT INTO water_log (water_intake, logged_at) VALUES (?, CURRENT_TIMESTAMP)";
         System.out.println(getWaterBenefits(choice));
     }
 

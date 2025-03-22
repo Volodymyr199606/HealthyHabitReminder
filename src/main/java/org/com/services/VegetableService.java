@@ -26,7 +26,8 @@ public class VegetableService extends BaseService {
                 default -> "Unknown";
             };
 
-            saveLog("INSERT INTO vegetable_log (vegetable_name, logged_at) VALUES (?, datetime('now'))", vegetable);
+            saveLog("INSERT INTO vegetable_log (vegetable_name, logged_at) VALUES (?, CURRENT_TIMESTAMP)", vegetable);
+            String sql = "INSERT INTO vegetable_log (vegetable_name, logged_at) VALUES (?, CURRENT_TIMESTAMP)";
             System.out.println(getVegetableBenefits(vegetable));
         } else {
             System.out.println("You should eat vegetables daily for essential nutrients. 🥦");

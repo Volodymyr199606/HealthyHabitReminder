@@ -5,8 +5,10 @@ import org.com.controller.UserController;
 import org.com.database.DatabaseHelper;
 
 public class Main {
-    public static void main(String[] args) {
-        DatabaseHelper.createTable();
+    public static void main(String[] args)
+    {
+        DatabaseHelper.createDatabase();
+        DatabaseHelper.createTables();
         UserController.startApplication();
     }
 }

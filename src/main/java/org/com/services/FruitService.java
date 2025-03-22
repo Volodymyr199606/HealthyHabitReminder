@@ -26,7 +26,7 @@ public class FruitService extends BaseService {
                 default -> "Unknown";
             };
 
-            saveLog("INSERT INTO fruit_log (fruit_name, logged_at) VALUES (?, datetime('now'))", fruit);
+            saveLog("INSERT INTO fruit_log (fruit_name, logged_at) VALUES (?, CURRENT_TIMESTAMP)", fruit);
             System.out.println(getFruitBenefits(fruit));
         } else {
             System.out.println("You should eat fruits daily for better health. 🥗");

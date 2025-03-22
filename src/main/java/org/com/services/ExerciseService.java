@@ -16,7 +16,8 @@ public class ExerciseService extends BaseService {
         }
 
         boolean exercised = answer.equals("yes");
-        saveLog("INSERT INTO exercise_log (exercised, logged_at) VALUES (?, datetime('now'))", exercised);
+        saveLog("INSERT INTO exercise_log (exercised, logged_at) VALUES (?, CURRENT_TIMESTAMP)", exercised);
+        String sql = "INSERT INTO exercise_log (exercised, logged_at) VALUES (?, CURRENT_TIMESTAMP)";
 
         if (exercised) {
             System.out.println("Super! You will feel better and more active during the day. 💪");

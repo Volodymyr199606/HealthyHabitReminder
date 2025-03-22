@@ -17,7 +17,7 @@ class BaseServiceInteractiveTest {
 
     @BeforeEach
     void setUp() {
-        DatabaseHelper.createTable();
+        DatabaseHelper.createTables();
     }
 
     @Test

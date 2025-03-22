@@ -17,7 +17,7 @@ class UserServiceTest {
 
     @BeforeEach
     void setUp() {
-        DatabaseHelper.createTable();
+
     }
 
     @Test

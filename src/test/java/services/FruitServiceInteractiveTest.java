@@ -15,7 +15,7 @@ class FruitServiceInteractiveTest {
 
     @BeforeEach
     void setUp() {
-        DatabaseHelper.createTable();
+        DatabaseHelper.createTables();
     }
 
     @Test
