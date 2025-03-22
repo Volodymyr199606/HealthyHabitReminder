@@ -70,7 +70,7 @@
 
 ### **1️⃣ Prerequisites**
 Before running this project, make sure you have:
-- **Java 17+ installed**
+- ⚠️Note: This project uses features introduced in Java 22. Ensure your IDE and build tools are configured to support Java 22.
 - **Maven (optional)**
 - **SQLite installed** (optional for database debugging)
 
@@ -98,11 +98,6 @@ mvn exec:java -Dexec.mainClass="org.com.app.Main"
 
 
 
-
-
-
-
-
-
-
-
+# Contact
+- Created with love by Volodymyr
+- 🔗LinkedIn: https://www.linkedin.com/in/volodymyr-behma/
