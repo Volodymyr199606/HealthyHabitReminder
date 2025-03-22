@@ -80,6 +80,13 @@ git clone https://github.com/your-username/HealthyLifeReminder.git
 cd HealthyLifeReminder
 ```
 
+### **3️⃣ Build and Run**
+
+```
+mvn compile
+mvn exec:java -Dexec.mainClass="org.com.app.Main"
+```
+
 
 # Future Improvements
 -  Add GUI using JavaFX/Spring Boot
