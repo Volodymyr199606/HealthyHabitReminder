@@ -66,9 +66,9 @@ HealthyHabitReminder/
  - **Exercise Tracking** - Logs whether the user exercised in the morning.  
  - **Water Intake Tracking** - Records daily water consumption and gives hydration tips.  
  - **Fruit & Vegetable Intake Logging** - Encourages healthy eating habits.  
- - **MySQL Database Support - Persistent storage for all activity logs.  
- - **OOP Principles** - Uses **Encapsulation, Inheritance, Polymorphism, and Interfaces**.  
- - **JUnit Tests** - Ensures reliability using **JUnit testing**.
+ - **MySQL Database Support** - Persistent storage for all activity logs.  
+ - **OOP Principles** - Uses Encapsulation, Inheritance, Polymorphism, and Interfaces.  
+ - **JUnit Tests** - Ensures reliability using JUnit testing.
 
 
 
@@ -81,8 +81,8 @@ Before running this project, make sure you have:
 - Java 22+
 - MySQL installed and running (default port 3306)
 - Note: This project uses features introduced in Java 22. Ensure your IDE and build tools are configured to support Java 22.
-- **Maven (optional)**
-- - MySQL Workbench or similar (optional for DB access)
+- Maven (optional)
+- MySQL Workbench or similar (optional for DB access)
 
 ### **2️⃣ Clone the Repository**
 ```sh
