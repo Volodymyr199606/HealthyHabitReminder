@@ -2,47 +2,55 @@
 
 ## 📌 Overview
 
-
-``` HealthyLifeReminder/
-│── src/
+```
+HealthyHabitReminder/
+├── .idea/                             # IntelliJ project files
+├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   ├── org/com/
-│   │   │   │   ├── app/
-│   │   │   │   │   ├── Main.java  --> (Entry point of the application)
-│   │   │   │   ├── controller/
-│   │   │   │   │   ├── UserController.java  --> (Manages user interaction and calls services)
-│   │   │   │   ├── database/
-│   │   │   │   │   ├── DatabaseHelper.java  --> (Handles SQLite database connection & table creation)
-│   │   │   │   ├── model/
-│   │   │   │   │   ├── User.java  --> (Encapsulates user data with getters/setters)
-│   │   │   │   ├── service/
-│   │   │   │   │   ├── UserService.java  --> (Handles user database operations)
-│   │   │   │   ├── services/
-│   │   │   │   │   ├── Loggable.java  --> (Interface for all reminder services)
-│   │   │   │   │   ├── BaseService.java  --> (Abstract base class with common logging methods)
-│   │   │   │   │   ├── ExerciseService.java  --> (Handles exercise logging)
-│   │   │   │   │   ├── WaterService.java  --> (Handles water intake logging)
-│   │   │   │   │   ├── FruitService.java  --> (Handles fruit intake logging)
-│   │   │   │   │   ├── VegetableService.java  --> (Handles vegetable intake logging)
-│── test/
-│   ├── java/
-│   │   ├── org/com/
-│   │   │   ├── database/
-│   │   │   │   ├── DatabaseHelperTest.java  --> (Tests database connection & table creation)
-│   │   │   ├── service/
-│   │   │   │   ├── UserServiceTest.java  --> (Tests user database operations)
-│   │   │   ├── services/
-│   │   │   │   ├── BaseServiceTest.java  --> (Tests common logging in BaseService)
-│   │   │   │   ├── ExerciseServiceTest.java  --> (Tests exercise logging)
-│   │   │   │   ├── WaterServiceTest.java  --> (Tests water intake logging)
-│   │   │   │   ├── FruitServiceTest.java  --> (Tests fruit intake logging)
-│   │   │   │   ├── VegetableServiceTest.java  --> (Tests vegetable intake logging)
-│── HealthyLifeReminder.db  --> (SQLite database file)
-│── pom.xml  --> (Maven configuration file, if using Maven)
-│── README.md  --> (Project documentation)
-```
+│   │   │   └── org/
+│   │   │       └── com/
+│   │   │           └── app/
+│   │   │               ├── Main.java                     # Entry point of the application
+│   │   │               ├── controller/
+│   │   │               │   └── UserController.java       # User interaction logic
+│   │   │               ├── database/
+│   │   │               │   └── DatabaseHelper.java       # DB connection and setup
+│   │   │               ├── model/
+│   │   │               │   └── User.java                 # User model
+│   │   │               ├── service/
+│   │   │               │   └── UserService.java          # Service to handle user logic
+│   │   │               └── services/
+│   │   │                   ├── BaseService.java          # Base logic for logging
+│   │   │                   ├── ExerciseService.java      # Handles exercise logs
+│   │   │                   ├── FruitService.java         # Handles fruit logs
+│   │   │                   ├── Loggable.java             # Interface for logging
+│   │   │                   ├── VegetableService.java     # Handles vegetable logs
+│   │   │                   └── WaterService.java         # Handles water logs
+│   │   └── resources/
+│   │       └── schema.sql                # SQL script for setting up DB and tables
+│
+│   └── test/
+│       └── java/
+│           ├── database/
+│           │   └── DatabaseHelperTest.java              # DB helper connection tests
+│           ├── service/
+│           │   └── UserServiceTest.java                 # Tests for user logic
+│           └── services/
+│               ├── BaseServiceInteractiveTest.java
+│               ├── ExerciseServiceInteractiveTest.java
+│               ├── FruitServiceInteractiveTest.java
+│               ├── VegetableServiceInteractiveTest.java
+│               └── WaterServiceInteractiveTest.java
+│                                                   # Interactive tests for each log service
+├── target/                         # Compiled output
+├── .gitignore                      # Git ignored files
+├── dependency-reduced-pom.xml     # Auto-generated by shade plugin
+├── LICENSE                         # License file
+├── pom.xml                         # Maven config file
+└── README.md                       # Project overview
 
+```
 
 
 ## 🎯 Technologies Used
