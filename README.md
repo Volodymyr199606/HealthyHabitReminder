@@ -55,7 +55,7 @@ HealthyHabitReminder/
 
 ## 🎯 Technologies Used
 - Java 22
-- SQLite (Database)
+- MySQL (Database)
 - JUnit 5 (Testing)
 - Maven (Dependency management)
 
@@ -66,9 +66,9 @@ HealthyHabitReminder/
  - **Exercise Tracking** - Logs whether the user exercised in the morning.  
  - **Water Intake Tracking** - Records daily water consumption and gives hydration tips.  
  - **Fruit & Vegetable Intake Logging** - Encourages healthy eating habits.  
- - **SQLite Database Support** - Stores activity logs for future reference.  
+ - **MySQL Database Support - Persistent storage for all activity logs.  
  - **OOP Principles** - Uses **Encapsulation, Inheritance, Polymorphism, and Interfaces**.  
- - **Unit Tests** - Ensures reliability using **JUnit testing**.
+ - **JUnit Tests** - Ensures reliability using **JUnit testing**.
 
 
 
@@ -80,7 +80,7 @@ HealthyHabitReminder/
 Before running this project, make sure you have:
 - ⚠️Note: This project uses features introduced in Java 22. Ensure your IDE and build tools are configured to support Java 22.
 - **Maven (optional)**
-- **SQLite installed** (optional for database debugging)
+- **MySQL Server
 
 ### **2️⃣ Clone the Repository**
 ```sh
@@ -95,6 +95,16 @@ mvn compile
 mvn exec:java -Dexec.mainClass="org.com.app.Main"
 ```
 
+### 🔧 Setup MySQL Database
+
+- Start MySQL Server
+- Run the schema.sql Script
+- You can do this using MySQL Workbench, IntelliJ DB Console, or CLI:
+```
+-- Run this in MySQL Workbench or your SQL CLI:
+SOURCE path/to/schema.sql;
+
+```
 
 # Future Improvements
 -  Add GUI using JavaFX/Spring Boot
@@ -108,4 +118,4 @@ mvn exec:java -Dexec.mainClass="org.com.app.Main"
 
 # Contact
 - Created with love by Volodymyr
-- 🔗LinkedIn: https://www.linkedin.com/in/volodymyr-behma/
+- 🌐 LinkedIn: https://www.linkedin.com/in/volodymyr-behma/
