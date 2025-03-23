@@ -78,9 +78,11 @@ HealthyHabitReminder/
 
 ### **1️⃣ Prerequisites**
 Before running this project, make sure you have:
+- Java 22+
+- MySQL installed and running (default port 3306)
 - ⚠️Note: This project uses features introduced in Java 22. Ensure your IDE and build tools are configured to support Java 22.
 - **Maven (optional)**
-- **MySQL Server
+- - MySQL Workbench or similar (optional for DB access)
 
 ### **2️⃣ Clone the Repository**
 ```sh
@@ -104,6 +106,15 @@ mvn exec:java -Dexec.mainClass="org.com.app.Main"
 -- Run this in MySQL Workbench or your SQL CLI:
 SOURCE path/to/schema.sql;
 
+```
+
+ ### SQL Commands to Query Data
+ ```
+SELECT * FROM users;
+SELECT * FROM fruit_log;
+SELECT * FROM vegetable_log;
+SELECT * FROM water_log;
+SELECT * FROM exercise_log;
 ```
 
 # Future Improvements
