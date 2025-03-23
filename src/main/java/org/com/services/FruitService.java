@@ -1,6 +1,8 @@
 
 package org.com.services;
 
+import org.com.utils.DataLogger;
+
 public class FruitService extends BaseService {
 
     @Override
@@ -27,6 +29,8 @@ public class FruitService extends BaseService {
             };
 
             saveLog("INSERT INTO fruit_log (fruit_name, logged_at) VALUES (?, CURRENT_TIMESTAMP)", fruit);
+
+            DataLogger.log("Fruit eaten: " + fruit);
             System.out.println(getFruitBenefits(fruit));
         } else {
             System.out.println("You should eat fruits daily for better health. 🥗");

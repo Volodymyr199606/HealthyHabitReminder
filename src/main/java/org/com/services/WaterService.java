@@ -1,6 +1,9 @@
 
 package org.com.services;
 
+
+import org.com.utils.DataLogger;
+
 public class WaterService extends BaseService {
     @Override
     public void logActivity() {
@@ -24,7 +27,8 @@ public class WaterService extends BaseService {
         };
 
         saveLog("INSERT INTO water_log (water_intake, logged_at) VALUES (?, CURRENT_TIMESTAMP)", waterIntake);
-        String sql = "INSERT INTO water_log (water_intake, logged_at) VALUES (?, CURRENT_TIMESTAMP)";
+
+        DataLogger.log("Water intake: " + waterIntake);
         System.out.println(getWaterBenefits(choice));
     }
 

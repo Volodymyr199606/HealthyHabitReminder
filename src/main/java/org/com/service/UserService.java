@@ -1,6 +1,6 @@
 
 package org.com.service;
-
+import org.com.utils.DataLogger;
 import org.com.database.DatabaseHelper;
 import org.com.model.User;
 
@@ -23,6 +23,7 @@ public class UserService {
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Error saving user to database! ❌");
+            DataLogger.log("New user added: " + user.getName() + ", Age: " + user.getAge());
         }
     }
 }

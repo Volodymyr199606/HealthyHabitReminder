@@ -1,6 +1,8 @@
 
 package org.com.services;
 
+import org.com.utils.DataLogger;
+
 public class ExerciseService extends BaseService {
 
     @Override
@@ -17,12 +19,14 @@ public class ExerciseService extends BaseService {
 
         boolean exercised = answer.equals("yes");
         saveLog("INSERT INTO exercise_log (exercised, logged_at) VALUES (?, CURRENT_TIMESTAMP)", exercised);
-        String sql = "INSERT INTO exercise_log (exercised, logged_at) VALUES (?, CURRENT_TIMESTAMP)";
+
 
         if (exercised) {
             System.out.println("Super! You will feel better and more active during the day. 💪");
         } else {
             System.out.println("You should do morning exercises as it boosts your energy for the whole day. 🏃");
         }
+
+        DataLogger.log("Exercise logged: " + exercised);
     }
 }
