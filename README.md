@@ -80,7 +80,7 @@ HealthyHabitReminder/
 Before running this project, make sure you have:
 - Java 22+
 - MySQL installed and running (default port 3306)
-- ⚠️Note: This project uses features introduced in Java 22. Ensure your IDE and build tools are configured to support Java 22.
+- Note: This project uses features introduced in Java 22. Ensure your IDE and build tools are configured to support Java 22.
 - **Maven (optional)**
 - - MySQL Workbench or similar (optional for DB access)
 
