@@ -24,6 +24,7 @@ public class UserController {
     };
 
     public static void startApplication() {
+        System.out.println();
         System.out.println("Welcome to Healthy Life Reminder!\n");
 
         String name = getValidInput("Enter your name (only letters): ", NAME_REGEX, "Invalid input! Name must contain only letters.");
