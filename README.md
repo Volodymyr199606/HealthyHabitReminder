@@ -108,7 +108,21 @@ SOURCE path/to/schema.sql;
 
 ```
 
- ### SQL Commands to Query Data
+### 🗂️ Using the schema.sql File
+
+```
+- Step 1: Locate the schema file
+- The SQL script is located in:src/main/resources/schema.sql
+- It includes the necessary CREATE DATABASE and CREATE TABLE commands to initialize:
+- users, exercise_log, water_log, fruit_log, vegetable_log
+
+- Step 2: Execute the script
+- You can run it using MySQL Workbench, the MySQL CLI, or IntelliJ's DB Console.
+- MySQL CLI: mysql -u root -p < src/main/resources/schema.sql
+- MySQL Workbench: 1.Open the schema.sql file in MySQL Workbench. 2. Execute the script.
+```
+
+ ### SQL Commands to View User Data
  ```
 SELECT * FROM users;
 SELECT * FROM fruit_log;
