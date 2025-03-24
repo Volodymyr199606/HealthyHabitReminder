@@ -37,6 +37,8 @@ SELECT * FROM fruit_log;
 SELECT * FROM vegetable_log;
 SELECT * FROM water_log;
 SELECT * FROM exercise_log;
+
+
 TRUNCATE TABLE users;
 TRUNCATE TABLE exercise_log;
 TRUNCATE TABLE water_log;
