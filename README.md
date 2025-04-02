@@ -79,9 +79,8 @@ HealthyHabitReminder/
 ### **1️⃣ Prerequisites**
 Before running this project, make sure you have:
 - Java 22+
-- MySQL installed and running (default port 3306)
-- Note: This project uses features introduced in Java 22. Ensure your IDE and build tools are configured to support Java 22.
-- Maven (optional)
+- MySQL Server (running on port `3306`)
+- Maven installed
 - MySQL Workbench or similar (optional for DB access)
 
 ### **2️⃣ Clone the Repository**
@@ -92,38 +91,30 @@ git clone https://github.com/Volodymyr199606/HealthyHabitReminder.git
 cd HealthyHabitReminder
 ```
 
-### **3️⃣ Build and Run**
+### 3️⃣🔧 Setup MySQL Database
+
+Option A: Using MySQL CLI
+```
+mysql -u root -p < src/main/resources/schema.sql
+```
+Option B: Using MySQL Workbench
+- Open schema.sql from src/main/resources/
+- Click the "Execute" (⚡) button
+
+This creates the healthyLife database with required tables:
+- users
+- exercise_log
+- water_log
+- fruit_log
+- vegetable_log
+
+### **4️⃣ Build and Run**
 
 ```
 mvn compile
 ```
 ```
 mvn exec:java -Dexec.mainClass=org.com.app.Main
-```
-
-### 🔧 Setup MySQL Database
-
-- Start MySQL Server
-- Run the schema.sql Script
-- You can do this using MySQL Workbench, IntelliJ DB Console, or CLI:
-```
--- Run this in MySQL Workbench or your SQL CLI:
-SOURCE path/to/schema.sql;
-
-```
-
-### 🗂️ Using the schema.sql File
-
-```
-- Step 1: Locate the schema file
-- The SQL script is located in:src/main/resources/schema.sql
-- It includes the necessary CREATE DATABASE and CREATE TABLE commands to initialize:
-- users, exercise_log, water_log, fruit_log, vegetable_log
-
-- Step 2: Execute the script
-- You can run it using MySQL Workbench, the MySQL CLI, or IntelliJ's DB Console.
-- MySQL CLI: mysql -u root -p < src/main/resources/schema.sql
-- MySQL Workbench: 1.Open the schema.sql file in MySQL Workbench. 2. Execute the script.
 ```
 
  ### SQL Commands to View User Data
