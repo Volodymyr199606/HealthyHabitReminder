@@ -86,7 +86,7 @@ Before running this project, make sure you have:
 
 ### **2️⃣ Clone the Repository**
 ```
-git clone https://github.com/your-username/HealthyLifeReminder.git
+git clone https://github.com/Volodymyr199606/HealthyHabitReminder.git
 ```
 ```
 cd HealthyHabitReminder
