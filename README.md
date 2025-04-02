@@ -114,7 +114,8 @@ This creates the healthyLife database with required tables:
 mvn compile
 ```
 ```
-mvn exec:java -Dexec.mainClass=org.com.app.Main
+mvn exec:java
+
 ```
 
  ### SQL Commands to View User Data
