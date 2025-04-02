@@ -85,15 +85,19 @@ Before running this project, make sure you have:
 - MySQL Workbench or similar (optional for DB access)
 
 ### **2️⃣ Clone the Repository**
-```sh
+```
 git clone https://github.com/your-username/HealthyLifeReminder.git
-cd HealthyLifeReminder
+```
+```
+cd HealthyHabitReminder
 ```
 
 ### **3️⃣ Build and Run**
 
 ```
 mvn compile
+```
+```
 mvn exec:java -Dexec.mainClass="org.com.app.Main"
 ```
 
