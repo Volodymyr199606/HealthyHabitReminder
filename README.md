@@ -98,7 +98,7 @@ cd HealthyHabitReminder
 mvn compile
 ```
 ```
-mvn exec:java -Dexec.mainClass='org.com.app.Main'
+mvn exec:java -Dexec.mainClass=org.com.app.Main
 ```
 
 ### 🔧 Setup MySQL Database
