@@ -1,4 +1,4 @@
-# 🏋️‍♂️ HealthyLifeReminder - Your Daily Health Tracker 🥗💧
+# 🏋️‍♂️ HealthyHabitReminder - Your Daily Health Tracker 🥗💧
 
 ## 📌 Overview
 
