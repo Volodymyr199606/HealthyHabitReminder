@@ -115,7 +115,6 @@ mvn compile
 ```
 ```
 mvn exec:java
-
 ```
 
  ### SQL Commands to View User Data
